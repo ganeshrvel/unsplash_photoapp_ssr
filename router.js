@@ -12,7 +12,7 @@ exports.get = (req, res) => {
     halt = false,
     extension = path.split('.').pop()//file extension
   
-  /*when the assets folder is fetched by the browser, look out for the acceptable file outputs.*/
+  //Deny all unauthorized file access
   if (path.includes('\/assets\/')) {
     switch (extension) {
       case 'jpg':
@@ -39,10 +39,10 @@ exports.get = (req, res) => {
         require('./controllers/404').get(req, res)
         break
     }
-    //prevent the output incase anything other than the above cases are invoked!
-    //*in case of suspicious activity found*
+    //prevent all unauthorized file access
+    
     if (!halt) {
-      if (isImage) {//if image there wont be a needed of charset for the output
+      if (isImage) {//Images doesn't require charset while buffer o/p
         charset = null
       }
       res.writeHead(200, {
