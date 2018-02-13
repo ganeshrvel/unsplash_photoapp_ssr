@@ -1,0 +1,40 @@
+<% include header.ejs %>
+
+<div class="body-container">
+	<div class="hide-xs" id="isMobile"></div>
+	<div class="hide" data-render-type="server" id="data-render-type"></div>
+	<div class="hide" data-render-pageno="1" id="data-render-pageno"></div>
+	<header>
+		<div class="nav nav-fixed-top grid-xs-12 inline-block z-depth-1">
+			<div class="logo-wrapper  visible">
+				<div class="valign-wrapper">
+					<a href="/">
+						<img src="../assets/img/logo.svg" class="logo" alt="PhotoApp Logo" title="Home | PhotoApp"></a>
+					<span class="site-name valign white-text text-bold hide-xs">PhotoApp</span>
+				</div>
+			</div>
+			<div class="search-bar-wrapper float-right ">
+				<input type="search" id="search" class="float-right" placeholder="Search.." autocomplete="off">
+			</div>
+		</div>
+	</header>
+
+	<section class="items-container">
+		<div class="items-wrapper noitemsfound hide">
+			<div class="white items">
+				<div class="item-inner-wrapper">
+					<img src="../assets/img/oops.jpg" alt="Result not found">
+					<div class="item-name text-center text-bold">No results found. Try again?</div>
+				</div>
+			</div>
+		</div>
+		<div class="items-inner-wrapper">
+			<% include list-items.ejs %>
+		</div>
+	</section>
+	<!--Loading spinner-->
+	<div class="pageLoadingSpinner"></div>
+	<!--/Loading spinner-->
+</div>
+
+<% include footer.ejs %>

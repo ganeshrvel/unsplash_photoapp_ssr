@@ -1,0 +1,25 @@
+<% for (var i = 0; i < photo_json_value.length; i++) { %>
+<div class="items-wrapper">
+	<div class="white items">
+		<div class="item-inner-wrapper">
+			<img src="<%= photo_json_value[i].urls.small %>" alt="<%= photo_json_value[i].user.name %>">
+			<div class="item-name truncate text-bold"><%= photo_json_value[i].user.name %></div>
+			<div class="item-description text-justify"><%= photo_json_value[i].description %></div>
+			<div class="row">
+				<div class="item item-likes valign-wrapper grid-xs-3">
+					<% if (null !== photo_json_value[i].likes) { %>
+					<i class="fa fa-heart pulse valign" aria-hidden="true"></i>
+					<span class="data valign"><%= photo_json_value[i].likes %></span>
+					<% } %>
+				</div>
+				<div class="item item-location valign-wrapper grid-xs-8">
+					<% if (null !== photo_json_value[i].user.location) { %>
+					<i class="fa fa-map-marker pulse valign" aria-hidden="true"></i>
+					<span class="data valign truncate"><%= photo_json_value[i].user.location %></span>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<% } %>

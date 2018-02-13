@@ -1,0 +1,28 @@
+{
+  "name": "photoapp",
+  "version": "1.0.0",
+  "description": "Photo App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshrvel/unsplash_photoapp_ssr.git"
+  },
+  "author": "Ganesh Rathinavel",
+  "license": "MIT",
+  "homepage": "https://github.com/ganeshrvel/unsplash_photoapp_ssr#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "latest"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "ejs": "^2.5.6",
+    "node-fetch": "^1.7.1",
+    "nodemon": "^1.11.0",
+    "unsplash-js": "^4.6.0"
+  }
+}
