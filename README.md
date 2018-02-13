@@ -4,7 +4,7 @@ Author: Ganesh Rathinavel
 
 Requirements: node.js, modern browsers (sorry no ie support)
 
-URL: https://github.com/ganeshrvel/unsplash_photoapp_ssr](https://github.com/ganeshrvel/unsplash_photoapp_ssr)
+URL: [https://github.com/ganeshrvel/unsplash_photoapp_ssr](https://github.com/ganeshrvel/unsplash_photoapp_ssr)
 
 
 
