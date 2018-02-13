@@ -1,5 +1,13 @@
 PhotoApp:
 --------
+Author: Ganesh Rathinavel
+
+Requirements: node.js, modern browsers (sorry no ie support)
+
+URL: [https://github.com/ganeshrvel/wp_php_form_validator](https://github.com/ganeshrvel/wp_php_form_validator)
+
+
+
 !!INFINITY SCROLL and SSR supported!!
 
 > ExpressJS is not used in this project, feel free to add ExpressJS and convert the project accordingly.
@@ -20,6 +28,13 @@ Warning:
 > The existing API keys which are configured inside './model/unsplash-config-data.js' were generated from my personal account.
 > Please don't abuse the service.
 > Replace them with your Unsplash API keys
+
+
+----------
+
+
+**For any commercial use, the existing Unsplash API keys must be removed/replaced with yours personal keys**
+*Navigate to  './model/unsplash-config-data.js' change them.*
 
 ----------
 Installation
