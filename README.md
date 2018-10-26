@@ -25,15 +25,14 @@ Note:
 
 Warning:
 
-> The existing API keys which are configured inside './model/unsplash-config-data.js' were generated from my personal account.
-> Please don't abuse the service.
+> The existing API keys inside './model/unsplash-config-data.js' are obsolete.
 > Replace them with your Unsplash API keys
 
 
 ----------
 
 
-**For any commercial use, the existing Unsplash API keys must be removed/replaced with yours personal keys**
+**The existing Unsplash API keys must be removed/replaced with yours personal keys**
 *Navigate to  './model/unsplash-config-data.js' change them.*
 
 ----------
@@ -52,4 +51,3 @@ Dependencies:
     "node-fetch": "^1.7.1",
     "nodemon": "^1.11.0",
     "unsplash-js": "^4.6.0"
-      
